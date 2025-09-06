@@ -1,0 +1,6 @@
+services:
+  smtp-relay:
+    image: ghcr.io/xyhelper/xyhelper-smtp-relay:latest
+    network_mode: "host"
+    env_file:
+      - .env
